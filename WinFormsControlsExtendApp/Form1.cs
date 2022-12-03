@@ -5,6 +5,16 @@ namespace WinFormsControlsExtendApp
         public Form1()
         {
             InitializeComponent();
+
+            pictureBox1.BackColor = Color.Aqua;
+            pictureBox1.Image = Image.FromFile("D:/61ljooq2jrqb.png");
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+
+            //WebBrowser webBrowser = new();
+            //this.Controls.Add(webBrowser);
+            //webBrowser.Location = new Point(250, 100);
+            //webBrowser.Size = new Size(300, 300);
+            //webBrowser.Navigate("https://ya.ru");
         }
 
         private void btnTimer_Click(object sender, EventArgs e)

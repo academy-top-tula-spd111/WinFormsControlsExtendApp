@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.timerMove = new System.Windows.Forms.Timer(this.components);
             this.btnMove = new System.Windows.Forms.Button();
@@ -37,7 +38,9 @@
             this.btnProgress = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // trackBar1
@@ -55,9 +58,9 @@
             // btnMove
             // 
             this.btnMove.BackColor = System.Drawing.Color.Red;
-            this.btnMove.Location = new System.Drawing.Point(31, 91);
+            this.btnMove.Location = new System.Drawing.Point(31, 87);
             this.btnMove.Name = "btnMove";
-            this.btnMove.Size = new System.Drawing.Size(63, 62);
+            this.btnMove.Size = new System.Drawing.Size(67, 62);
             this.btnMove.TabIndex = 1;
             this.btnMove.UseVisualStyleBackColor = false;
             // 
@@ -75,7 +78,7 @@
             // 
             this.progressBar1.Location = new System.Drawing.Point(12, 270);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(300, 64);
+            this.progressBar1.Size = new System.Drawing.Size(204, 64);
             this.progressBar1.TabIndex = 3;
             // 
             // btnProgress
@@ -106,11 +109,21 @@
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 5;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(555, 75);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 153);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.progressBar1);
@@ -121,6 +134,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,5 +150,6 @@
         private Button btnProgress;
         private DateTimePicker dateTimePicker1;
         private MonthCalendar monthCalendar1;
+        private PictureBox pictureBox1;
     }
 }
