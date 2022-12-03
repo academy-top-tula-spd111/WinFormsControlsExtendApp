@@ -29,7 +29,6 @@ namespace WinFormsControlsExtendApp
         private void timerMove_Tick(object sender, EventArgs e)
         {
             btnMove.Location = new Point(btnMove.Location.X + 5, btnMove.Location.Y);
-
         }
 
         private void btnProgress_Click(object sender, EventArgs e)
